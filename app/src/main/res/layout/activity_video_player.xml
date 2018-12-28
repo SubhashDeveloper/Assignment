@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoPlayer">
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp">
+        <EditText
+            android:textColorHint="#FFFF"
+            android:textColor="#FFFF"
+            android:gravity="center"
+            android:id="@+id/et_vedio_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Video link to play online"
+            android:inputType="text"
+            />
+        <Button
+            android:layout_marginLeft="135dp"
+            android:id="@+id/bt_play"
+            android:text="play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_button"
+        android:layout_gravity="center"
+        android:text="Select Video"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
